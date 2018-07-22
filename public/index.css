@@ -1,0 +1,39 @@
+.product-list .product-item {
+  column-count: 2;
+  padding: 20px 0;
+}
+
+.product-list .product-item img {
+  width: 120px;
+}
+
+.product-list .product-item .details-wrapper {
+  padding: 5px 0;
+}
+
+.container {
+  max-width: 280px;
+  font-family: sans-serif;
+}
+
+.checkbox-list {
+  padding: 20px;
+}
+
+.checkbox-list .submit-button {
+  margin: 20px;
+}
+
+.checkbox-list .checkbox {
+  display: block;
+  padding: 0 5px;
+}
+
+.product-item-container .apply-button,
+.checkbox-list .submit-button {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: max-content;
+  padding: 0 10px;
+  cursor: pointer;
+}
