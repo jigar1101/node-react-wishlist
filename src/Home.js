@@ -10,11 +10,16 @@ class Home extends React.Component {
       <ItemDetailsComponent
         productList={this.props.productList}
         addListClick={this.addListClick.bind(this)}
+        removeListClick={this.removeListClick.bind(this)}
       />
     );
   }
 
   addListClick() {
+    this.props.history.push("/wishlist");
+  }
+
+  removeListClick(){
     this.props.history.push("/wishlist");
   }
 

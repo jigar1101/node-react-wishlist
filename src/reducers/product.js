@@ -8,28 +8,32 @@ const getInitialState = () => {
           "https://images.pexels.com/photos/1236320/pexels-photo-1236320.jpeg",
         name: "Product 1",
         price: "$10",
-        isAddedToWishlist: false
+        isAddedToWishlist: false,
+        isRemovedFromWishlist: true
       },
       {
         imgURL:
           "https://images.pexels.com/photos/1236320/pexels-photo-1236320.jpeg",
         name: "Product 2",
         price: "$20",
-        isAddedToWishlist: false
+        isAddedToWishlist: false,
+        isRemovedFromWishlist: true
       },
       {
         imgURL:
           "https://images.pexels.com/photos/1236320/pexels-photo-1236320.jpeg",
         name: "Product 3",
         price: "$40",
-        isAddedToWishlist: false
+        isAddedToWishlist: false,
+        isRemovedWishlist: true
       },
       {
         imgURL:
           "https://images.pexels.com/photos/1236320/pexels-photo-1236320.jpeg",
         name: "Product 4",
         price: "$5",
-        isAddedToWishlist: true
+        isAddedToWishlist: true,
+        isRemovedFromWishlist: false
       }
     ]
   };

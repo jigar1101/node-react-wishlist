@@ -12,8 +12,16 @@ export default class ItemDetailsComponent extends React.Component {
     this.props.addListClick(this.state.productList);
   }
 
+  removeListClick(){
+    this.props.removeListClick(this.state.productList);
+  }
+
   showAlert() {
     alert("You have already added this product to the wishlist");
+  }
+
+  showRemoveAlert() {
+    alert("This product is not in wishlist");
   }
 
   render() {
@@ -44,6 +52,18 @@ export default class ItemDetailsComponent extends React.Component {
                     {product.isAddedToWishlist
                       ? "Added to Wishlist"
                       : "Add to Wishlist"}
+                  </div>
+                  <div
+                    className="apply-button"
+                    onClick={
+                      product.isAddedToWishlist
+                        ? this.removeListClick.bind(this)
+                        : this.showRemoveAlert.bind(this)
+                    }
+                  >
+                    {product.isAddedToWishlist
+                      ? "Remove from Wishlist"
+                      : "Not in Wishlist"}
                   </div>
                 </div>
               </div>
